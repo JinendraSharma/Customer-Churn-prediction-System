@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Welcome {{ username }}</h1>
+
+    <h2>Upload Customer Dataset</h2>
+
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+
+        <input type="file" name="file" required>
+
+        <button type="submit">Predict Churn</button>
+
+    </form>
+
+    <br>
+
+    <a href="/logout">Logout</a>
+
+</div>
+
+</body>
+</html>
